@@ -1,0 +1,49 @@
+.page-add-book{
+    padding: 10px 30px 30px 30px;
+    margin-left: 265px;
+    margin-top: 20px;
+    display: flex;
+}
+.wrap-all-form-add-book{
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+.div-wrap-line-form{
+    margin-left: 30px;
+}
+.input-style{
+    outline: none;
+    color: gray;
+    font-family: 'Nerko One', cursive;
+    font-family: 'Ubuntu', sans-serif;  
+}
+.title{
+    font-size: 20px;
+    color: rgb(73, 73, 73);
+}
+.line-in-form{
+    margin-top: 10px
+}
+
+.button-add{
+    margin-left: 770px;
+    margin-top: 20px;
+    background-color: rgb(67, 151, 67);
+    outline: none
+}
+.image-upload{
+    width: 200px; 
+    height: 300px; 
+    background-color: gray;
+    margin-right: 30px;
+    color: black;
+}
+.style-title{
+    font-family: 'Nerko One', cursive;
+}
+.icon-img{
+    font-size: 40px;
+    margin: 130px 0px 0px 80px;
+}
