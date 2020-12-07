@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
     <link href="../assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/libs/css/style.css">
-    <link rel="stylesheet" href="styleCustomer.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
     <link rel="stylesheet" href="../assets/vendor/charts/chartist-bundle/chartist.css">
     <link rel="stylesheet" href="../assets/vendor/charts/morris-bundle/morris.css">
@@ -137,175 +137,72 @@
         </div>
         <!-- ============================================================== -->
         <!-- end navbar -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- left sidebar -->
-        <!-- ============================================================== -->
-        <div class="nav-left-sidebar sidebar-dark">
-            <div class="menu-list">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav flex-column">
-                            <li class="nav-divider">
-                                Menu
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Employee <span class="badge badge-success">6</span></a>
-                                <div id="submenu-1" class="collapse submenu">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="dashboard-finance.html">Add Employee</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="dashboard-finance.html">Delete Employee</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="dashboard-sales.html">Adjust Employee</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Customer</a>
-                                <div id="submenu-2" class="collapse submenu">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/general.html">Add Customer</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/carousel.html">Delete Customer</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/listgroup.html">Adjust Customer</a>
-                                        </li>
 
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fa-chart-pie"></i>Sale</a>
-                                <div id="submenu-3" class="collapse submenu">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/chart-c3.html">Managa Receipt</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/chart-chartist.html">Create Receipt</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/chart-charts.html">Search Receipt   </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="pages/chart-morris.html">Orders</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fas fa-fw fa-chart-pie"></i>Manage Books</a>
-                                <div id="submenu-4" class="collapse submenu">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="../pages/chart-c3.html">Add Books</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="../pages/chart-chartist.html">Delete Books</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="../pages/chart-charts.html">Adjust Books</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false">Manage Orders</a>
-                            </li>
-                        </ul>
+        <!-- content setting -->
+        <div class="banner">
+            <h1>General Setting</h1>
+        </div>
+        <div class="container">
+            
+            <form action="" class="form">
+                <div class="content">
+                    <h2>inventory constraints</h2>
+                    <div class="one-line">
+                        <label for="">Maximum books quantity</label>
+                        <input type="number" name="number" value="100" class="set1" min="1" max="200" step="1">
                     </div>
-                </nav>
-            </div>
+                    <div class="one-line">
+                        <label for="">Minimum inventory before import</label>
+                        <input type="number" name="number" id="2" value="50" min="1" max="200" step="1">
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>price constraints</h2>
+                    <div class="one-line">
+                        <label for="">Maximum debt</label>
+                        <input type="number" name="number" id="" value="100000" min="10000" max="2000000" step="10000">
+                    </div>
+                    <div class="one-line">
+                        <label for="">Maximum books price</label>
+                        <input type="number" name="number" id=""min="10000" value="200000" max="20000000" step="10000"> 
+                    </div>
+                    <div class="one-line">
+                        <label for="">Online payment</label>
+                        <input type="checkbox" name="checkbox" id="" class="checkSize" checked>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="save">
+                        <button class="save-info" >save</button>
+                    </div>
+                </div>
+                
+            </form>
         </div>
-        <!-- ============================================================== -->
-        <!-- end left sidebar -->
-        <!-- Content -->
-        <!-- =============================== -->
-
-        <div class="content">
-            <div class="show-employee">
-                <h1 class="alight-center">Employee</h1>
-                <table class="show-employ">
-                    <tr>
-                        <td><span>ID</span></td>
-                        <td><span>Fullname</span></td>
-                        <td><span>Gender</span></td>
-                        <td><span>Role</span></td>
-                        <td><span>Email</span></td>
-                        <td><span>Address</span></td>
-                        <td><span>Activity</span></td>
-                    </tr>
-                    <tr>
-                        <td><span>01</span></td>
-                        <td><span>Nguyen Anh Khang</span></td>
-                        <td><span>Nam</span></td>
-                        <td><span>Manager</span></td>
-                        <td><span>anhkhang110@gmail.com</span></td>
-                        <td><span>Thu Duc Ho Chi Minh city</span></td>
-                        <td class="no-border">
-                            <button class="margin-btn edit-btn">Edit</button>
-                            <button class="margin-btn delete-btn">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><span>01</span></td>
-                        <td><span>Khang</span></td>
-                        <td><span>Nam</span></td>
-                        <td><span>Manager</span></td>
-                        <td><span>anhkhang110@gmail.com</span></td>
-                        <td><span>Thu Duc</span></td>
-                        <td class="no-border">
-                            <button class="margin-btn edit-btn">Edit</button>
-                            <button class="margin-btn delete-btn">Delete</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <!-- =============================== -->
-        <!-- End content -->
+        <!-- end setting -->
 
 
-    </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jquery 3.3.1 -->
-    <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-    <!-- bootstap bundle js -->
-    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-    <!-- slimscroll js -->
-    <script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
-    <!-- main js -->
-    <script src="../assets/libs/js/main-js.js"></script>
-    <!-- chart chartist js -->
-    <script src="../assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
-    <!-- sparkline js -->
-    <script src="../assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
-    <!-- morris js -->
-    <script src="../assets/vendor/charts/morris-bundle/raphael.min.js"></script>
-    <script src="../assets/vendor/charts/morris-bundle/morris.js"></script>
-    <!-- chart c3 js -->
-    <script src="../assets/vendor/charts/c3charts/c3.min.js"></script>
-    <script src="../assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
-    <script src="../assets/vendor/charts/c3charts/C3chartjs.js"></script>
-    <script src="../assets/libs/js/dashboard-ecommerce.js"></script>
-    <script src="../assets/libs//js/jquery-3.5.1.min.js"></script>
-    <script src="script.js"></script>
-</body>
-
-</html>
-
-</html>
+        <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+        <!-- bootstap bundle js -->
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+        <!-- slimscroll js -->
+        <script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+        <!-- main js -->
+        <script src="../assets/libs/js/main-js.js"></script>
+        <!-- chart chartist js -->
+        <script src="../assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+        <!-- sparkline js -->
+        <script src="../assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+        <!-- morris js -->
+        <script src="../assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+        <script src="../assets/vendor/charts/morris-bundle/morris.js"></script>
+        <!-- chart c3 js -->
+        <script src="../assets/vendor/charts/c3charts/c3.min.js"></script>
+        <script src="../assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+        <script src="../assets/vendor/charts/c3charts/C3chartjs.js"></script>
+        <script src="../assets/libs/js/dashboard-ecommerce.js"></script>
+        <script src="../assets/libs//js/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+    
+    </html>
