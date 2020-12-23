@@ -3,19 +3,30 @@
 
 <head>
     <!-- Required meta tags -->
+
+    <link rel="stylesheet" href="style-show-employee.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/libs/css/style.css">
-    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
-    <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
-    <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
-    <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
-    <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
-    <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="../../assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/libs/css/style.css">
+    <link rel="stylesheet" href="../../assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../../assets/vendor/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="../../assets/vendor/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="../../assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/charts/c3charts/c3.css">
+    <link rel="stylesheet" href="../../assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <title>EMPLOYEE</title>
 </head>
 
 <body>
@@ -28,7 +39,7 @@
         <!-- ============================================================== -->
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                <a class="navbar-brand" href="index.html">Concept</a>
+                <a class="navbar-brand" href="index.html">Library</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -48,7 +59,7 @@
                                         <div class="list-group">
                                             <a href="#" class="list-group-item list-group-item-action active">
                                                 <div class="notification-info">
-                                                    <div class="notification-list-user-img"><img src="assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-img"><img src="../assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle"></div>
                                                     <div class="notification-list-user-block"><span class="notification-list-user-name">Jeremy Rakestraw</span>accepted your invitation to join the team.
                                                         <div class="notification-date">2 min ago</div>
                                                     </div>
@@ -56,7 +67,7 @@
                                             </a>
                                             <a href="#" class="list-group-item list-group-item-action">
                                                 <div class="notification-info">
-                                                    <div class="notification-list-user-img"><img src="assets/images/avatar-3.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-img"><img src="../assets/images/avatar-3.jpg" alt="" class="user-avatar-md rounded-circle"></div>
                                                     <div class="notification-list-user-block"><span class="notification-list-user-name">John Abraham </span>is now following you
                                                         <div class="notification-date">2 days ago</div>
                                                     </div>
@@ -64,7 +75,7 @@
                                             </a>
                                             <a href="#" class="list-group-item list-group-item-action">
                                                 <div class="notification-info">
-                                                    <div class="notification-list-user-img"><img src="assets/images/avatar-4.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-img"><img src="../assets/images/avatar-4.jpg" alt="" class="user-avatar-md rounded-circle"></div>
                                                     <div class="notification-list-user-block"><span class="notification-list-user-name">Monaan Pechi</span> is watching your main repository
                                                         <div class="notification-date">2 min ago</div>
                                                     </div>
@@ -72,7 +83,7 @@
                                             </a>
                                             <a href="#" class="list-group-item list-group-item-action">
                                                 <div class="notification-info">
-                                                    <div class="notification-list-user-img"><img src="assets/images/avatar-5.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-img"><img src="../assets/images/avatar-5.jpg" alt="" class="user-avatar-md rounded-circle"></div>
                                                     <div class="notification-list-user-block"><span class="notification-list-user-name">Jessica Caruso</span>accepted your invitation to join the team.
                                                         <div class="notification-date">2 min ago</div>
                                                     </div>
@@ -92,24 +103,24 @@
                                 <li class="connection-list">
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="assets/images/github.png" alt=""> <span>Github</span></a>
+                                            <a href="#" class="connection-item"><img src="../assets/images/github.png" alt=""> <span>Github</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="assets/images/dribbble.png" alt=""> <span>Dribbble</span></a>
+                                            <a href="#" class="connection-item"><img src="../assets/images/dribbble.png" alt=""> <span>Dribbble</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="assets/images/dropbox.png" alt=""> <span>Dropbox</span></a>
+                                            <a href="#" class="connection-item"><img src="../assets/images/dropbox.png" alt=""> <span>Dropbox</span></a>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="assets/images/bitbucket.png" alt=""> <span>Bitbucket</span></a>
+                                            <a href="#" class="connection-item"><img src="../assets/images/bitbucket.png" alt=""> <span>Bitbucket</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="assets/images/mail_chimp.png" alt=""><span>Mail chimp</span></a>
+                                            <a href="#" class="connection-item"><img src="../assets/images/mail_chimp.png" alt=""><span>Mail chimp</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="assets/images/slack.png" alt=""> <span>Slack</span></a>
+                                            <a href="#" class="connection-item"><img src="../assets/images/slack.png" alt=""> <span>Slack</span></a>
                                         </div>
                                     </div>
                                 </li>
@@ -119,7 +130,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown nav-user">
-                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
                             <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                 <div class="nav-user-info">
                                     <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
@@ -143,7 +154,7 @@
         <div class="nav-left-sidebar sidebar-dark">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="d-xl-none d-lg-none" href="#">Nhân viên</a>
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -153,65 +164,30 @@
                                 Menu
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Employee<span class="badge badge-success">6</span></a>
-                                <div id="submenu-1" class="collapse submenu" style="">
+                                <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Employee <span class="badge badge-success">6</span></a>
+                                <div id="submenu-1" class="collapse submenu">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-2" aria-controls="submenu-1-2">Add Employee</a>
-                                            <!-- <div id="submenu-1-2" class="collapse submenu" style="">
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="index.html">E Commerce Dashboard</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="ecommerce-product.html">Product List</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="ecommerce-product-single.html">Product Single</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="ecommerce-product-checkout.html">Product Checkout</a>
-                                                    </li>
-                                                </ul>
-                                            </div> -->
+                                            <a class="nav-link" href="/Employee/add-employee/add-employeee.html">Add Employee</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="dashboard-finance.html">Delete Employee</a>
+                                            <a class="nav-link" href="display-employee.html">Edit/Delete Employee</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="dashboard-sales.html">Adjust Employee</a>
-                                        </li>
-                                        <!-- <li class="nav-item">
-                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-1" aria-controls="submenu-1-1">Infulencer</a>
-                                            <div id="submenu-1-1" class="collapse submenu" style="">
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="dashboard-influencer.html">Influencer</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="influencer-finder.html">Influencer Finder</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="influencer-profile.html">Influencer Profile</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li> -->
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Customer</a>
-                                <div id="submenu-2" class="collapse submenu" style="">
+                                <div id="submenu-2" class="collapse submenu">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/cards.html">Add Customer<span class="badge badge-secondary">New</span></a>
+                                            <a class="nav-link" href="pages/general.html">Add Customer</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/general.html">Delete Customer</a>
+                                            <a class="nav-link" href="pages/carousel.html">Delete Customer</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/carousel.html">Adjust Customer</a>
+                                            <a class="nav-link" href="pages/listgroup.html">Adjust Customer</a>
                                         </li>
 
                                     </ul>
@@ -219,16 +195,16 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fa-chart-pie"></i>Sale</a>
-                                <div id="submenu-3" class="collapse submenu" style="">
+                                <div id="submenu-3" class="collapse submenu">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/chart-c3.html">Manage Receipt</a>
+                                            <a class="nav-link" href="pages/chart-c3.html">Managa Receipt</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="pages/chart-chartist.html">Create Receipt</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/chart-charts.html">Search Receipt</a>
+                                            <a class="nav-link" href="pages/chart-charts.html">Search Receipt   </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="pages/chart-morris.html">Orders</a>
@@ -236,25 +212,24 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms"></i>Manage Books</a>
-                                <div id="submenu-4" class="collapse submenu" style="">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fas fa-fw fa-chart-pie"></i>Manage Books</a>
+                                <div id="submenu-4" class="collapse submenu">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/form-elements.html">Add Books</a>
+                                            <a class="nav-link" href="/Book_Managerment/AddBook/index.html">Add Books</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/form-validation.html">Delete Books</a>
+                                            <a class="nav-link" href="/Book_Managerment/Delete-EditBook/index.html">Edit/Delete Books</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/multiselect.html">Adjust Books</a>
+                                            <a class="nav-link" href="/Book_Managerment/BookImport/index.html">Import Books</a>
                                         </li>
-
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fas fa-fw fa-table"></i>Managa Orders</a>
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false">Manage Orders</a>
                             </li>
                         </ul>
                     </div>
@@ -262,114 +237,123 @@
             </div>
         </div>
         <!-- ============================================================== -->
-                            <!-- end left sidebar -->
-
-                            <!-- Content -->
+        <!-- end left sidebar -->
+        <!-- Content -->
         <!-- =============================== -->
 
         <div class="content">
-            <div class="add-employee-info">
-                <h1 class="alight-center">Add Employee</h1>
-                <table class="add-employ">
-                    <tr>
-                        <td>
-                            <span>First name: </span><br>
+            <div class="show-employee">
+                <div class="show-ee">
+                    <h1 class="alight-center">Employee</h1>
+                    <table class="show-employ">
+
+                    </table>
+                </div>
+                <div class="form-edit-employee">
+                    <div class="txt-header">
+                        <h1>Edit employee</h1>
+                    </div>
+                    <div class="line-edit">
+                        <div class="boxeach-edit">
+                            <span>New First name: </span><br>
                             <input type="text" placeholder="Lukaku" id="firstname">
-                        </td>
-                        <td>
-                            <span>Last name: </span><br>
+                        </div>
+                        <div class="boxeach-edit">
+                            <span>New Last name: </span><br>
                             <input type="text" placeholder="Romeo" id="lastname">
-                        </td>
-                        <td>
+                        </div>
+                        <div class="boxeach-edit">
                             <span>Gender: </span><br>
                             <select name="gender" id="gender">
                                 <option value="Nam">Nam</option>
                                 <option value="Nữ">Nữ</option>
                                 <option value="Khác">Khác</option>
                             </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span for="username">Username: </span><br>
+                        </div>
+                    </div>
+                    <div class="line-edit">
+                        <div class="boxeach-edit">
+                            <span for="username">New Username: </span><br>
                             <input type="text" placeholder="Lukaku11" id="username">
-
-                        </td>
-                        <td>
-                            <span for="password">Password: </span><br>
+                        </div>
+                        <div class="boxeach-edit">
+                            <span for="password">New Password: </span><br>
                             <input type="password" placeholder="************" id="password">
-                        </td>
-                        <td>
-                            <span>Role</span><br>
+                        </div>
+                        <div class="boxeach-edit">
+                            <span>New Role</span><br>
                             <select name="role" id="role">
                                 <option value="Manager">Manager</option>
                                 <option value="Librarian">Librarian</option>
                             </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>Date of birth:</span><br>
+                        </div>
+                    </div>
+                    <div class="line-edit">
+                        <div class="boxeach-edit">
+                            <span>New Date of birth:</span><br>
                             <input type="date" name="dob" id="dob">
-                        </td>
-                        <td>
-                            <span>ID: </span><br>
+                        </div>
+                        <div class="boxeach-edit">
+                            <span>New ID: </span><br>
                             <input type="text" placeholder="00" id="infoCard">
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>
-                            <span for="email">Email: </span><br>
+                        </div>
+                    </div>
+                    <div class="line-edit">
+                        <div class="boxeach-edit">
+                            <span for="email">New Email: </span><br>
                             <input type="text" placeholder="example@example.com" id="email">
-                        </td>
-                        <td>
-                            <span for="phone">Phone: </span><br>
+                        </div>
+                        <div class="boxeach-edit">
+                            <span for="phone">New Phone: </span><br>
                             <input type="text" placeholder="0123456789" pattern="[0-9]{10}" maxlength="10" id="phone">
-                        </td>
-                        <td>
-                            <span for="address">Address: </span><br>
+                        </div>
+                        <div class="boxeach-edit">
+                            <span for="address">New Address: </span><br>
                             <input type="text" placeholder="HCMC" id="address">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="button" onclick="saveInfo()" class="float-right">Save</button>
-                        </td>
-                        <td><button type="button" onclick="cancelSaveInfo()" class="float-right">Cancel</button></td>
-                    </tr>
-                </table>
+                        </div>
+                    </div>
+                    <div class="line-edit">
+                        <div class="boxeach-edit">
+                            <button type="button" id="update-employee" class="float-right">Save</button>
+                        </div>
+                        <div class="boxeach-edit">
+                            <button type="button" id="cancel-update-employee" class="float-right">Cancel</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- =============================== -->
+        <!-- End content -->
+
+
     </div>
-                            
-                            <!-- ============================================================== -->
-                            <!-- end wrapper  -->
-                            <!-- ============================================================== -->
-                    <!-- ============================================================== -->
-                    <!-- end main wrapper  -->
-                    <!-- ============================================================== -->
-                    <!-- Optional JavaScript -->
-                    <!-- jquery 3.3.1 -->
-                    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-                    <!-- bootstap bundle js -->
-                    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-                    <!-- slimscroll js -->
-                    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
-                    <!-- main js -->
-                    <script src="assets/libs/js/main-js.js"></script>
-                    <!-- chart chartist js -->
-                    <script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
-                    <!-- sparkline js -->
-                    <script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
-                    <!-- morris js -->
-                    <script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
-                    <script src="assets/vendor/charts/morris-bundle/morris.js"></script>
-                    <!-- chart c3 js -->
-                    <script src="assets/vendor/charts/c3charts/c3.min.js"></script>
-                    <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
-                    <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
-                    <script src="assets/libs/js/dashboard-ecommerce.js"></script>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jquery 3.3.1 -->
+    <script src="../../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- bootstap bundle js -->
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- slimscroll js -->
+    <script src="../../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <!-- main js -->
+    <script src="../../assets/libs/js/main-js.js"></script>
+    <!-- chart chartist js -->
+    <script src="../../assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+    <!-- sparkline js -->
+    <script src="../../assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+    <!-- morris js -->
+    <script src="../../assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+    <script src="../../assets/vendor/charts/morris-bundle/morris.js"></script>
+    <!-- chart c3 js -->
+    <script src="../../assets/vendor/charts/c3charts/c3.min.js"></script>
+    <script src="../../assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+    <script src="../../assets/vendor/charts/c3charts/C3chartjs.js"></script>
+    <script src="../../assets/libs/js/dashboard-ecommerce.js"></script>
+    <script src="script.js"></script>
 </body>
+
+</html>
 
 </html>

@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    $("#image").blur((function () {
+        $(".icon-img").hide();
+        let src = $("#image").val();
+        $("#img-show").attr("src", src)
+    }));
     $("#addBook").click(function () {
         let employeeId = $("#employeeId").val();
         let phoneNumberCustomer = $("#phoneNumberCustomer").val();
@@ -17,7 +22,39 @@ $(document).ready(function () {
             alert("vui long nhap day du thong tin")
         }
         else {
-            console.log("err")
+            axios({
+                method: "post",
+                url: "http://localhost:3000/book",
+                data: {
+                    "name": bookName,
+                    "author": author,
+                    "quantity": quantity,
+                    "image": image,
+                    "price": price,
+                    "manfacture": manufacture,
+                    "topic": topic,
+                    "description": "",
+                    "dateAdd": dateAdd,
+                    "dateRelease": dateReleased
+                }
+            }).then((res) => {
+                alert("Bạn đã thêm sách thành công !!!")
+                $("#employeeId").val("");
+                $("#phoneNumberCustomer").val("");
+                $("#bookTitlte").val("");
+                $("#bookName").val("");
+                $("#author").val("");
+                $("#image").val("");
+                $("#dateAdd").val("");
+                $("#dateReleased").val("");
+                $("#manufacture").val("");
+                $("#price").val("");
+                $("#topic").val("");
+                $("#quantity").val("");
+                $(".icon-img").show();
+                $("#img-show").attr("src", "")
+            })
         }
+
     })
 })
