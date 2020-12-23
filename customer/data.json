@@ -1,0 +1,76 @@
+{
+  "customer": [
+    {
+      "firstname": "Phu",
+      "lastname": "Nguyen Duy",
+      "gender": "Male",
+      "id": 1,
+      "password": "1",
+      "customerClass": "Gold",
+      "email": "phusbu@gmail.com",
+      "phonenumber": "123456789",
+      "address": "Nghe An"
+    },
+    {
+      "firstname": "Khang",
+      "lastname": "Nguyen Anh",
+      "gender": "Female",
+      "id": 2,
+      "password": "1",
+      "customerClass": "Silver",
+      "email": "phusbu@gmail.com",
+      "phonenumber": "123456789",
+      "address": "Nghe An"
+    },
+    {
+      "firstname": "Khang",
+      "lastname": "Nguyen Anh",
+      "gender": "Other",
+      "id": 3,
+      "password": "1",
+      "customerClass": "Silver",
+      "email": "phusbu@gmail.com",
+      "phonenumber": "123456789",
+      "address": "Nghe An"
+    },
+    {
+      "firstname": "Luyen",
+      "lastname": "Nguyen Van",
+      "gender": "Female",
+      "id": 4,
+      "password": "1",
+      "customerClass": "Gold",
+      "email": "phusbu@gmail.com",
+      "phonenumber": "123456789",
+      "address": "Dong Nai"
+    },
+    {
+      "firstname": "Toi",
+      "lastname": "Vu",
+      "gender": "Male",
+      "password": "a",
+      "customerClass": "Gold",
+      "email": "toix82k@gmail.com",
+      "phone": "a",
+      "address": "a",
+      "id": 6
+    }
+  ],
+  "feedback": [
+    {
+      "id": 2,
+      "content": "I love the services here.",
+      "postId": 1
+    },
+    {
+      "id": 4,
+      "content": "I love the services here.",
+      "postId": 2
+    },
+    {
+      "id": 3,
+      "content": "I love the services here.",
+      "postId": 4
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+.container{
+    margin-top: 40px;
+}
+
+.banner{
+    margin-left: 350px;
+}
+
+.main-content{
+    background-color: rgb(221, 221, 223);
+    padding: 30px;
+    padding-left: -10px;
+}
+
+.table{
+    margin-left: 42px;
+}
+
+button{
+    width: 100px;
+    background-color: rgb(16, 187, 16);
+    cursor: pointer;
+    border: none;
+    height: 30px ;
+}
+
+button:hover{
+    background-color: rgb(46, 240, 46);
+    transition: ease-out 0.5s;
+    border: none;
+}
+
+select{
+    width: 162px;
+    height: 30px;
+}
+
+input{
+    height: 30px;
+}
+
+.edit-customer{
+    margin-top: 30px;
+}
+
+.main-table h1{
+    margin-left: 300px;
+}
+
+.table-customer{
+    margin-left: 270px;
+    margin-bottom: 30px;
+}
+
+.table-customer table,.table-customer th,.table-customer td 
+    {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+.table-customer td {
+            text-align: center;
+            color: black;
+            padding: 5px;
+        }
+
+.edit-customer{
+    margin: 8px;
+    width: 60px;
+    margin-left: 2px;
+}  
+
+.delete-customer{
+    width: 60px;
+    margin: auto;
+}
+
+.edit-customer-form{
+    display: none;
+}

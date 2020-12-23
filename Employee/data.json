@@ -1,0 +1,92 @@
+{
+  "employee": [
+    {
+      "firstname": "Khang",
+      "lastname": "Nguyen Anh",
+      "gender": "Nam",
+      "username": "khanga37",
+      "password": "1",
+      "role": "Manager",
+      "phonenumber": "0971037601",
+      "email": "khangna@gm.uit.edu.vn",
+      "address": "Vung Tau",
+      "born": "2000-10-01",
+      "id": 5
+    },
+    {
+      "firstname": "Phu",
+      "lastname": "Nguyen Duy",
+      "gender": "Nam",
+      "username": "phusbu",
+      "password": "1",
+      "role": "Librarian",
+      "phonenumber": "123456789",
+      "email": "phund@gm.uit.edu.vn",
+      "address": "Nghe An",
+      "born": "2000-01-01",
+      "id": 6
+    },
+    {
+      "firstname": "Luyen ",
+      "lastname": "Ngan Van",
+      "gender": "Nam",
+      "username": "nganvl",
+      "password": "1",
+      "role": "Librarian",
+      "phonenumber": "123456789",
+      "email": "luyennv@gm.uit.edu.vn",
+      "address": "Dak Lak",
+      "born": "2000-01-11",
+      "id": 7
+    },
+    {
+      "firstname": "Duy",
+      "lastname": "Hoàng Viễn",
+      "gender": "Nam",
+      "username": "vieduy",
+      "password": "1",
+      "role": "Manager",
+      "phonenumber": "1234567788",
+      "email": "duyhv@gm.uit.edu.vn",
+      "address": "Quảng Bình",
+      "born": "2000-01-01",
+      "id": 8
+    },
+    {
+      "firstname": "Khoa",
+      "lastname": " Nguyễn Anh",
+      "gender": "Nam",
+      "username": "anhkhoa",
+      "password": "1",
+      "role": "Manager",
+      "phonenumber": "0123456789",
+      "email": "khoana@gm.uit.edu.vn",
+      "address": "Vũng Tàu",
+      "born": "2000-10-01",
+      "id": 9
+    },
+    {
+      "firstname": "Nga",
+      "lastname": "Nguyễn Quỳnh",
+      "gender": "Nữ",
+      "username": "bôngcute",
+      "password": "030721",
+      "role": "Manager",
+      "phonenumber": "0352372001",
+      "email": "ngantqps19046@fpt.edu.vn",
+      "address": "Hà Tĩnh",
+      "born": "2001-07-03",
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,90 @@
+        .show-employee {
+            margin: 25px 96px 0px 376px;
+            padding: 0 40px;
+        }
+        
+        .alight-center {
+            text-align: center;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        td {
+            text-align: center;
+            color: black;
+            padding: 5px;
+        }
+        
+        .edit-info-employee {
+            background-color: #40de40;
+            color: white;
+            margin: 2px;
+        }
+        
+        .delete-info-employee {
+            background-color: #ff0101;
+            color: white;
+            margin: 2px;
+        }
+        /* *************************** */
+        
+        input[type="text"] {
+            width: 200px;
+            height: 40px;
+        }
+        
+        input#dob {
+            width: 200px;
+            height: 40px;
+        }
+        
+        input[type="password"] {
+            width: 200px;
+            height: 40px;
+        }
+        
+        select#gender {
+            height: 40px;
+            width: 200px;
+        }
+        
+        select#role {
+            height: 40px;
+            width: 200px;
+        }
+        
+        .add-employee-info {
+            margin: 25px 145px 0px 409px;
+            padding: 30px 74px;
+            background-color: #D8D8D8;
+            border-radius: 10px;
+        }
+        
+        .line-edit {
+            display: flex;
+        }
+        
+        .boxeach-edit {
+            padding-right: 20px;
+            padding-bottom: 15px;
+        }
+        
+        .form-edit-employee {
+            background-color: #D8D8D8;
+            border-radius: 10px;
+            padding: 10px 75px;
+        }
+        
+        .txt-header {
+            text-align: center;
+        }
+        
+        .form-edit-employee {
+            display: none;
+            margin-top: 10px;
+        }

@@ -1,0 +1,47 @@
+.wrap-login {
+    text-align: center;
+    margin: 25px 95px 0px 581px;
+    padding: 18px 0px;
+    background-color: #D8D8D8;
+    border-radius: 10px;
+    width: 431px;
+}
+
+.txt-header h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.main {
+    display: inline-block;
+}
+
+button#btn-log {
+    color: white;
+    background-color: #17BB4E;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 39px;
+    cursor: pointer;
+}
+
+.fill-box {
+    padding: 12px;
+}
+
+input#username {
+    width: 200px;
+    height: 40px;
+    outline: none;
+}
+
+input#password {
+    width: 200px;
+    height: 40px;
+    outline: none;
+}
+
+.padding-10 {
+    padding: 10px;
+    font-size: 20px;
+}
