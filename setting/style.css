@@ -1,0 +1,92 @@
+
+ *{
+    margin:0;
+    padding:0;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background-color: #c2bdbd;
+}
+
+.container {
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 640px;
+    width: 500px;
+    margin-top:20px ;
+    border-radius: 20px;
+    line-break: 18px;
+}
+
+.banner {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+
+input[type=number] {
+    border:1.5px  solid #333 ;
+    border-radius: 8px;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+}
+
+input.checkSize{
+    height: 20px;
+    width: 20px;
+    border:1.5px  solid rgb(37, 36, 36) ;
+}
+
+.content {
+    padding-top: 15px;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.one-line {
+    display: flex;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.one-line input {
+    margin-left: auto;
+    margin-right: 60px;
+    padding: 2px;
+    position: relative;
+}
+
+.checkSize{
+    margin-right: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(66, 64, 64);
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.save-info{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(36, 207, 36);
+    text-transform: uppercase;
+    border-radius: 15px;
+    width: 120px;
+    cursor: pointer;
+    margin-left: 130px;
+    text-align: center;
+}
+
+.save-info:hover{
+    background-color: rgb(215, 218, 50);
+    color: rgb(57, 58, 57);
+    transition: 0.5s all ease;
+}

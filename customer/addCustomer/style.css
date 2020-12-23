@@ -1,0 +1,41 @@
+.container{
+    margin-top: 40px;
+}
+
+.banner{
+    margin-left: 300px;
+}
+
+.main-content{
+    background-color: rgb(221, 221, 223);
+    padding: 30px;
+    padding-left: 20px;
+}
+
+.table{
+    margin-left: 42px;
+}
+
+button{
+    width: 100px;
+    background-color: rgb(16, 187, 16);
+    cursor: pointer;
+    border: none;
+    height: 30px ;
+}
+
+button:hover{
+    background-color: rgb(46, 240, 46);
+    transition: ease-out 0.5s;
+    border: none;
+}
+
+select{
+    width: 162px;
+    height: 30px;
+}
+
+input{
+    height: 30px;
+}
+
