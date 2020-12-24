@@ -1,88 +1,106 @@
-.page-delete-book{
+.page-delete-book {
     padding: 10px 30px 30px 30px;
     margin-left: 300px;
     margin-top: 20px;
     display: flex;
 }
-.wrap-all-form-delete-book{
+
+.wrap-all-form-delete-book {
     background-color: rgb(216, 216, 216);
     border-radius: 10px;
     padding-bottom: 30px;
     padding-right: 30px;
 }
-.div-wrap-line-form{
+
+.div-wrap-line-form {
     margin-left: 30px;
 }
-.input-style{
+
+.input-style {
     outline: none;
     color: gray;
     font-family: 'Nerko One', cursive;
-    font-family: 'Ubuntu', sans-serif;  
+    font-family: 'Ubuntu', sans-serif;
 }
-.title{
+
+.title {
     font-size: 20px;
     color: rgb(73, 73, 73);
 }
-.line-in-form{
+
+.line-in-form {
     margin-top: 10px
 }
 
-.button-add{
+.button-add {
     font-size: 20px;
     margin-left: 770px;
     margin-top: 20px;
     background-color: rgb(67, 151, 67);
     outline: none;
-    font-family: 'Nerko One', cursive; 
+    font-family: 'Nerko One', cursive;
 }
-.image-upload{
-    width: 200px; 
-    height: 300px; 
+
+.image-upload {
+    width: 200px;
+    height: 300px;
     background-color: gray;
     margin-right: 30px;
     color: black;
 }
-.style-title{
+
+.style-title {
     font-family: 'Nerko One', cursive;
 }
-.icon-img{
+
+.icon-img {
     font-size: 40px;
     margin: 130px 0px 0px 80px;
 }
 
+
 /* style cho table */
-th, td {  
-    padding: 10px; 
+
+th,
+td {
+    padding: 9px;
     color: black;
-}  
-table#alter tr:nth-child(even) {  
-    background-color: #eee;  
-}  
-table#alter tr:nth-child(odd) {  
-    background-color: #fff;  
-}  
-table#alter th {  
-    color: white;  
-    background-color: gray;  
-} 
-.button-edit{
+}
+
+table#alter tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#alter tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table#alter th {
+    color: white;
+    background-color: gray;
+}
+
+.button-edit {
     background-color: #27A300;
     width: 50px;
 }
-.button-del{
+
+.button-del {
     background-color: #D62828;
     margin-left: 10px;
     width: 50px;
 }
-.img-book{
+
+.img-book {
     width: 100px;
     height: 150px;
 }
-.wrap-book-filtered{
+
+.wrap-book-filtered {
     margin-left: 30px
 }
 
-.form-edit{
+.form-edit {
     display: none;
     width: 650px;
     height: 480px;
@@ -95,9 +113,11 @@ table#alter th {
     padding-top: 30px;
     font-size: 20px;
 }
-.line-edit{
+
+.line-edit {
     margin-bottom: 20px;
 }
-.wrap-two-button{
-    margin-left:400px;
+
+.wrap-two-button {
+    margin-left: 400px;
 }

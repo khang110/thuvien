@@ -1,0 +1,434 @@
+{
+  "employee": [
+    {
+      "firstname": "Khang",
+      "lastname": "Nguyen Anh",
+      "gender": "Nam",
+      "username": "khanga37",
+      "password": "1",
+      "role": "Manager",
+      "phonenumber": "0971037601",
+      "email": "khangna@gm.uit.edu.vn",
+      "address": "Vung Tau",
+      "born": "2000-10-01",
+      "id": 5
+    },
+    {
+      "firstname": "Phu",
+      "lastname": "Nguyen Duy",
+      "gender": "Nam",
+      "username": "phusbu",
+      "password": "1",
+      "role": "Librarian",
+      "phonenumber": "123456789",
+      "email": "phund@gm.uit.edu.vn",
+      "address": "Nghe An",
+      "born": "2000-01-01",
+      "id": 6
+    },
+    {
+      "firstname": "Luyen ",
+      "lastname": "Ngan Van",
+      "gender": "Nam",
+      "username": "nganvl",
+      "password": "1",
+      "role": "Librarian",
+      "phonenumber": "123456789",
+      "email": "luyennv@gm.uit.edu.vn",
+      "address": "Dak Lak",
+      "born": "2000-01-11",
+      "id": 7
+    },
+    {
+      "firstname": "Duy",
+      "lastname": "Hoàng Viễn",
+      "gender": "Nam",
+      "username": "vieduy",
+      "password": "1",
+      "role": "Manager",
+      "phonenumber": "1234567788",
+      "email": "duyhv@gm.uit.edu.vn",
+      "address": "Quảng Bình",
+      "born": "2000-01-01",
+      "id": 8
+    },
+    {
+      "firstname": "Khoa",
+      "lastname": " Nguyễn Anh",
+      "gender": "Nam",
+      "username": "anhkhoa",
+      "password": "1",
+      "role": "Manager",
+      "phonenumber": "0123456789",
+      "email": "khoana@gm.uit.edu.vn",
+      "address": "Vũng Tàu",
+      "born": "2000-10-01",
+      "id": 9
+    }
+  ],
+  "book": [
+    {
+      "id": 1,
+      "name": "Co so du lieu",
+      "author": "Hoang Tuan Anh",
+      "quantity": 5,
+      "image": "http://thuvien.uit.edu.vn/Portal/Editbib_ViewPicture/?bibid=4348",
+      "price": 30000,
+      "manfacture": "Kim Dong",
+      "topic": "Giáo trình",
+      "description": "",
+      "dateAdd": "2020-12-02",
+      "dateRelease": "2020-12-02"
+    },
+    {
+      "id": 3,
+      "name": "He thong nhung",
+      "author": "Hoang Tuan Anh",
+      "quantity": 4,
+      "image": "http://thuvien.uit.edu.vn/Portal/Editbib_ViewPicture/?bibid=4134",
+      "price": 30000,
+      "manfacture": "Kim Dong",
+      "topic": "Giáo trình",
+      "description": "",
+      "dateAdd": "2020-12-02",
+      "dateRelease": "2020-12-02"
+    },
+    {
+      "id": 4,
+      "name": "Tri tue nhan tao",
+      "author": "Hoang Tuan Anh",
+      "quantity": 4,
+      "image": "http://thuvien.uit.edu.vn/Portal/Editbib_ViewPicture/?bibid=626",
+      "price": 30000,
+      "manfacture": "Kim Dong",
+      "topic": "Giáo trình",
+      "description": "",
+      "dateAdd": "2020-12-02",
+      "dateRelease": "2020-12-02"
+    },
+    {
+      "name": "Tôi tài giỏi bạn cũng thế",
+      "author": "Adam Khoo",
+      "quantity": "396500",
+      "image": "https://sachvui.com/cover/2015/Toi-tai-gioi--ban-cung-the.jpg",
+      "price": "199.000",
+      "manfacture": "hà nội",
+      "topic": "kĩ năng ",
+      "description": "",
+      "dateAdd": "2020-12-24",
+      "dateRelease": "2000-01-01",
+      "id": 5
+    }
+  ],
+  "Invoice": [
+    {
+      "dateAdd": "2020-12-04",
+      "customerName": "Khang",
+      "listBook": [
+        {
+          "id": "1",
+          "quantity": "1"
+        },
+        {
+          "id": "2",
+          "quantity": "1"
+        },
+        {
+          "id": "3",
+          "quantity": "1"
+        }
+      ],
+      "listname": [
+        {
+          "name": "Co so du lieu",
+          "price": 30000
+        },
+        {
+          "name": "Dai so tuyen tinh",
+          "price": 30000
+        },
+        {
+          "name": "He thong nhung",
+          "price": 30000
+        }
+      ],
+      "totalCost": 90000,
+      "paymentMethod": "momo",
+      "debt": "10000",
+      "payed": "30000",
+      "id": 1
+    },
+    {
+      "dateAdd": "2020-12-04",
+      "customerName": "Luyện",
+      "listBook": [
+        {
+          "id": "1",
+          "quantity": "3"
+        },
+        {
+          "id": "2",
+          "quantity": "1"
+        },
+        {
+          "id": "3",
+          "quantity": "1"
+        }
+      ],
+      "listname": [
+        {
+          "name": "Co so du lieu",
+          "price": 30000
+        },
+        {
+          "name": "Dai so tuyen tinh",
+          "price": 30000
+        },
+        {
+          "name": "He thong nhung",
+          "price": 30000
+        }
+      ],
+      "totalCost": 150000,
+      "paymentMethod": "momo",
+      "debt": "10000",
+      "payed": "30000",
+      "id": 2
+    },
+    {
+      "dateAdd": "2020-12-12",
+      "customerName": "Khang",
+      "listBook": [
+        {
+          "id": "1",
+          "quantity": "1"
+        }
+      ],
+      "listname": [
+        {
+          "name": "Co so du lieu",
+          "price": 30000
+        }
+      ],
+      "totalCost": 30000,
+      "paymentMethod": "momo",
+      "debt": "10000",
+      "payed": "30000",
+      "id": 3
+    },
+    {
+      "dateAdd": "2020-12-12",
+      "customerName": "Khang",
+      "listBook": [
+        {
+          "id": "1",
+          "quantity": "1"
+        }
+      ],
+      "listname": [
+        {
+          "name": "Co so du lieu",
+          "price": 30000
+        }
+      ],
+      "totalCost": 30000,
+      "paymentMethod": "momo",
+      "debt": "10000",
+      "payed": "30000",
+      "id": 4
+    },
+    {
+      "dateAdd": "2020-12-12",
+      "customerName": "Luyen",
+      "listBook": [
+        {
+          "id": "1",
+          "quantity": "1"
+        }
+      ],
+      "listname": [
+        {
+          "name": "Co so du lieu",
+          "price": 30000
+        }
+      ],
+      "totalCost": 30000,
+      "paymentMethod": "momo",
+      "debt": "10000000",
+      "payed": "11111",
+      "id": 5
+    },
+    {
+      "dateAdd": "2020-12-24",
+      "customerName": "Khoa",
+      "listBook": [
+        {
+          "id": "5",
+          "quantity": "1"
+        }
+      ],
+      "listname": [
+        {
+          "name": "Tôi tài giỏi bạn cũng thế",
+          "price": "199.000"
+        }
+      ],
+      "totalCost": 199,
+      "paymentMethod": "momo",
+      "debt": "0",
+      "payed": "150000",
+      "id": 6
+    }
+  ],
+  "Customer": [
+    {
+      "id": 1,
+      "name": "Khang",
+      "debt": 60000
+    },
+    {
+      "id": 2,
+      "name": "Luyen",
+      "debt": 10040000
+    },
+    {
+      "firstname": "Khang",
+      "lastname": "Anh",
+      "gender": "Male",
+      "password": "1",
+      "customerClass": "Gold",
+      "email": "anhkhang110@gmail.com",
+      "phone": "123455",
+      "address": "Thủ Đức",
+      "id": 3
+    }
+  ],
+  "Importion": [
+    {
+      "id": 1,
+      "CustomerName": "Khang",
+      "EmployeePhonenumber": "0354031969",
+      "Supplier": "ĐHQG TP.Hồ Chí Minh",
+      "SumCost": 7000000,
+      "Debt": 1000000,
+      "ListBook": [
+        {
+          "id": 0,
+          "quantity": 7
+        },
+        {
+          "id": 1,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "EmployeeName": "Tuan Anh",
+      "EmployeePhonenumber": "0354031969",
+      "Supplier": "ĐHQG TP.Hồ Chí Minh",
+      "SumCost": 60000,
+      "Debt": 30000,
+      "ListBook": [
+        {
+          "id": "1",
+          "quantity": "2"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "EmployeeName": "Duy",
+      "EmployeePhonenumber": "020202020",
+      "Supplier": "ĐHQG TP.Hồ Chí Minh",
+      "SumCost": 60000,
+      "Debt": 30000,
+      "ListBook": [
+        {
+          "id": "1",
+          "quantity": "2"
+        }
+      ],
+      "id": 3
+    }
+  ],
+  "Library-Supplier": [
+    {
+      "Supplier": "ĐHQG TP.Hồ Chí Minh",
+      "Debt": 1090000,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "Supplier": "ĐHQG Hà Nội",
+      "Debt": 1000000
+    },
+    {
+      "id": 3,
+      "Supplier": "CLB Sách",
+      "Debt": 1000000
+    }
+  ],
+  "customer": [
+    {
+      "firstname": "Phu",
+      "lastname": "Nguyen Duy",
+      "gender": "Male",
+      "id": 1,
+      "password": "1",
+      "customerClass": "Gold",
+      "email": "phusbu@gmail.com",
+      "phonenumber": "123456789",
+      "address": "Nghe An"
+    },
+    {
+      "firstname": "Khang",
+      "lastname": "Nguyen Anh",
+      "gender": "Female",
+      "id": 2,
+      "password": "1",
+      "customerClass": "Silver",
+      "email": "phusbu@gmail.com",
+      "phonenumber": "123456789",
+      "address": "Nghe An"
+    },
+    {
+      "firstname": "Luyen",
+      "lastname": "Nguyen Van",
+      "gender": "Female",
+      "id": 4,
+      "password": "1",
+      "customerClass": "Gold",
+      "email": "phusbu@gmail.com",
+      "phonenumber": "123456789",
+      "address": "Dong Nai"
+    },
+    {
+      "firstname": "Khang",
+      "lastname": "Anh",
+      "gender": "Male",
+      "password": "1",
+      "customerClass": "Gold",
+      "email": "anhkhang110@gmail.com",
+      "phone": "123455",
+      "address": "Thủ Đức",
+      "id": 3
+    }
+  ],
+  "feedback": [
+    {
+      "id": 2,
+      "content": "I love the services here.",
+      "postId": 1
+    },
+    {
+      "id": 4,
+      "content": "I love the services here.",
+      "postId": 2
+    },
+    {
+      "id": 3,
+      "content": "I love the services here.",
+      "postId": 4
+    }
+  ]
+}

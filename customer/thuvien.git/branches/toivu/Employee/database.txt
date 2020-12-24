@@ -1,0 +1,17 @@
+{
+"employee": [
+  {
+    "id": "01"  
+    "firstname": "Khang",
+    "lastname": "Nguyễn",
+    "gender": "Nam",
+    "username": "khanga37",
+    "password": "khanga37",  
+    "role": "manager",
+    "phonenumber": "0971037601",
+    "email": "anhkhang110@gmail.com",
+    "address": "Vũng Tàu",
+    "born": "1/10/2000"             
+  }
+]
+}
