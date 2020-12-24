@@ -89,7 +89,7 @@ const getData = () => {
                 })
                 //Chức năng button tạo hoá đơn
                 let listChosed_ = [];
-                $("#create").click(function () {
+                $("#create").click(async function () {
                     for (let i = 0; i < listChosed.length; i++) {
                         listChosed_[i] = { "id": listChosed[i], "quantity": $(`#quantity-buyed-${listChosed[i]}`).val() }
                     }
@@ -108,17 +108,45 @@ const getData = () => {
                     }
                     else {
                         axios({
-                            method: "post",
-                            url: "http://localhost:3000/Invoice",
-                            data: {
-                                dateAdd: dateAdd,
-                                customerName: customerName,
-                                listBook: listChosed_,
-                                listname: listName,
-                                totalCost: totalCost,
-                                paymentMethod: "momo",
-                                debt: debt,
-                                payed: payed
+                            method: "get",
+                            url: "http://localhost:3000/Customer"
+                        }).then((res) => {
+                            //Khai bao dieu kien chi ban sach cho nguoi no tien duoi 50000
+                            let listCustomer = res.data;
+                            temp = "";
+                            for (let i = 0; i < listCustomer.length; i++) {
+                                if (listCustomer[i].name == customerName) {
+                                    temp = listCustomer[i];
+                                    break;
+                                }
+                            }
+                            if (temp == "" || temp.debt < 50000) {
+                                temp.debt = Number(temp.debt) + Number(debt);
+                                axios({
+                                    method: "put",
+                                    url: `http://localhost:3000/Customer/${temp.id}`,
+                                    data: temp
+                                });
+                                axios({
+                                    method: "post",
+                                    url: "http://localhost:3000/Invoice",
+                                    data: {
+                                        dateAdd: dateAdd,
+                                        customerName: customerName,
+                                        listBook: listChosed_,
+                                        listname: listName,
+                                        totalCost: totalCost,
+                                        paymentMethod: "momo",
+                                        debt: debt,
+                                        payed: payed
+                                    }
+                                }).then((res) => {
+                                    alert("Da tao hoa don thanh cong !!!");
+                                    location.reload();
+                                })
+                            }
+                            else {
+                                alert("Khach hang khong du dieu kien mua hang!!!")
                             }
                         })
                     }

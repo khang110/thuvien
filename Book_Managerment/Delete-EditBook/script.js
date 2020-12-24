@@ -1,15 +1,15 @@
 var actionFilter = document.getElementById('filter');
 let data = []
 const getData = () => {
-    const getData_ = async() => {
+    const getData_ = async () => {
         await axios({
             method: "get",
             url: "http://localhost:3000/book"
         }).then((res) => data = res.data)
     }
     getData_();
-    $(document).ready(function() {
-        $("#filter").click(function() {
+    $(document).ready(function () {
+        $("#filter").click(function () {
             let bookShow = [];
             let nameBook = $("#name-book").val();
             let author = $("#author").val();
@@ -18,26 +18,28 @@ const getData = () => {
             let topic = $("#topic").val();
             let manufacture = $("#manufacture").val();
             for (let i = 0; i < data.length; i++) {
-                if (data[i].name == nameBook || data[i].author == author || data[i].manufacture == manufacture ||
-                    data[i].dateAdd == dateAdd || data[i].dateRelease == dateRelease || data[i].topic == topic) {
+                if (data[i].name == nameBook || data[i].author == author || data[i].manufacture == manufacture
+                    || data[i].dateAdd == dateAdd || data[i].dateRelease == dateRelease || data[i].topic == topic) {
                     let j = 0;
                     for (; j < bookShow.length; j++) {
                         if (bookShow.length === 0)
                             break;
                         else if (bookShow[j].id === data[i].id) {
                             break;
-                        } else
+                        }
+                        else
                             continue;
                     }
                     if (j === bookShow.length) {
                         bookShow.push(data[i])
-                    } else {
+                    }
+                    else {
                         continue;
                     }
-                } else
+                }
+                else
                     continue;
             }
-
             function renderData(bookShow) {
                 var html = '<tr><th>Image</th><th>ID</th><th>Name</th><th>Author</th><th>Date Add</th><th>Date released</th><th>Topic</th><th>Price</th><th>Quantity</th><th>Action</th></tr>';
 
@@ -56,41 +58,43 @@ const getData = () => {
                 }
                 $('#table-book').html(html);
                 //Chuc nang xoa sach
-                $(".button-del").click(function() {
+                $(".button-del").click(function () {
                     axios({
                         method: "delete",
                         url: `http://localhost:3000/book/${$(this).attr('id')}/`
                     });
-                    $(`#_${$(this).attr('id')}`).hide(1000, function() { alert("This book is deleted !!!") });
+                    $(`#_${$(this).attr('id')}`).hide(1000, function () { alert("This book is deleted !!!") });
                     let index;
                     for (let i = 0; i < data.length; i++) {
                         if (data[i].id == $(this).attr('id')) {
                             index = i;
                             break;
-                        } else
+                        }
+                        else
                             continue;
                     }
                     data.splice(index, 1);
                 });
                 // Chuc nang chinh sua thong tin sach
-                $(".button-edit").click(function() {
+                $(".button-edit").click(function () {
                     $("#form-edit").show()
                     let id_Book = $(this).attr('id');
                     let book;
                     for (let i = 0; i < bookShow.length; i++) {
                         if (bookShow[i].id == id_Book) {
-                            book = {...bookShow[i] };
-                        } else
+                            book = { ...bookShow[i] };
+                        }
+                        else
                             continue;
                     }
-                    $("#submit-change").click(function() {
+                    $("#submit-change").click(function () {
                         let newName = $("#newName").val();
                         let newImg = $("#newImg").val();
                         let newAuthor = $("#newAuthor").val();
                         let newDateAdd = $("#newDateAdd").val();
                         let newDateReleased = $("#newDateReleased").val();
-                        let newTopic = $("#newTopic").val();
-                        let newQuantity = $("#newQuantity").val();
+                        let newTopic = $("#newTopic").val()
+                        let newQuantity = $("#newQuantity").val()
                         if (newName != "")
                             book.name = newName;
                         if (newAuthor != "")
@@ -109,10 +113,7 @@ const getData = () => {
                             method: "PUT",
                             url: `http://localhost:3000/book/${id_Book}`,
                             data: book
-                        }).then((res) => {
-                            alert("Thay doi thanh cong");
-                            $("#form-edit").hide()
-                        })
+                        }).then((res) => { alert("Thay doi thanh cong"); $("#form-edit").hide() })
                     })
                 })
             }
@@ -122,6 +123,6 @@ const getData = () => {
 }
 getData();
 //Đóng form
-$("#close-form").click(function() {
+$("#close-form").click(function () {
     $("#form-edit").hide()
 })
