@@ -45,7 +45,6 @@ const getData = () => {
                 else
                     continue;
             }
-            print(invoiceShow)
             function renderData(invoiceShow) {
                 var html = '<tr><th>ID</th><th>Date add</th><th>Customer name</th><th>Book</th><th>Total cost</th><th>Payed</th><th>Debt</th><th>Method</th></tr>';
                 for (var i = 0; i < invoiceShow.length; i++) {
